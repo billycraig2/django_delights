@@ -30,7 +30,7 @@ class RecipeRequirements(models.Model):
     quantity = models.FloatField()
 
     def __str__(self):
-        return f'{self.quantity} {self.ingredient.unit} of {self.ingredient.name} to make {self.menu_item.title}'
+        return f'{self.quantity} {self.ingredient.unit} of {self.ingredient.name} needed to make {self.menu_item.title}'
     
     class Meta:
         verbose_name = 'Recipe Requirement'

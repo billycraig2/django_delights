@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import InventoryItem
+from django.views.generic.edit import CreateView
 
 # Create your views here.
 def home(request):
